@@ -1,0 +1,17 @@
+/* pages/login/login.wxss */
+.container {
+    padding-top: 300rpx;
+
+}
+
+.login-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.main-button {
+    height: 80rpx;
+    width: 600rpx;
+    border-radius: 12rpx !important;
+}
