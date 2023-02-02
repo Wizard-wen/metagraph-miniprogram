@@ -1,11 +1,34 @@
-// pages/mine/mine.js
+// pages/inspriration/index/index.js
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
+        show: false,
+        actions: [
+            {
+                name: '选项',
+            },
+            {
+                name: '选项',
+            },
+            {
+                name: '选项',
+                subname: '描述信息',
+                openType: 'share',
+            },
+        ],
+    },
+    showActionSheet() {
+        this.setData({ show: true });
+    },
+    onClose() {
+        this.setData({ show: false });
+    },
 
+    onSelect(event) {
+        console.log(event.detail);
     },
 
     /**

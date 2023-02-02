@@ -1,6 +1,5 @@
 const util = require('../../utils/util.js');
 const api = require('../../config/api.js');
-import Toast from '@vant/weapp/toast/toast';
 Page({
 
     /**
@@ -9,11 +8,11 @@ Page({
     data: {
         name: '',
         password: '',
-        style: 'background: #eee; width: 600rpx; border-radius: 40rpx; margin: 0 auto 30rpx;'
+        style: 'background: #eee; width: 680rpx; height: 80rpx;border-radius: 12rpx; margin: 0 auto 30rpx;padding: 8px 16px;'
     },
     loginByName() {
         if (this.data.name === '') {
-            Toast('请输入用户名');
+            wx.showToast({ title: '请输入用户名' });
             return;
         }
         if (!this.data.password) {
@@ -32,8 +31,8 @@ Page({
                 key: 'isLogin',
                 data: true
             })
-            wx.navigateTo({
-                url: 'pages/index/index',
+            wx.switchTab({
+                url: '/pages/home/index/index',
             })
         })
     },

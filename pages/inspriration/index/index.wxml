@@ -1,0 +1,17 @@
+<scroll-view scroll-y="true">
+    <van-cell-group custom-class="inspiration-item" inset wx:key="index" wx:for="(item, index) in 20">
+        <van-cell use-label-slot>
+            <view slot="label" class="head-view">
+                <view class="content">
+                    <view>11111</view>
+                    <view>11111</view>
+                </view>
+                <view class="control">
+                    <view>2022-11-23 09:54</view>
+                    <van-icon name="ellipsis" bindtap="showActionSheet" />
+                </view>
+            </view>
+        </van-cell>
+    </van-cell-group>
+    <van-action-sheet z-index="1000" show="{{ show }}" actions="{{ actions }}" bind:close="onClose" bind:select="onSelect" />
+</scroll-view>

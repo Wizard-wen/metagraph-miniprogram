@@ -1,0 +1,18 @@
+/* pages/inspriration/index/index.wxss */
+Page {
+  background: #eee;
+  padding-top: 30rpx;
+  padding-bottom: 60rpx;
+}
+
+.inspiration-item {
+  margin-bottom: 20rpx !important;
+}
+.content {
+  color: #000;
+}
+.control {
+  margin-top: 40rpx;
+  display: flex;
+  justify-content: space-between;
+}

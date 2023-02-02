@@ -1,10 +1,37 @@
-// pages/index/index.js
+// pages/mine/mine.js
+import Dialog from '@vant/weapp/dialog/dialog';
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
+
+    },
+
+    logout() {
+        console.log(1111)
+        Dialog.confirm({
+            title: '退出登录',
+            message: '确定要退出登录吗？'
+        })
+            .then(() => {
+                // on confirm
+                wx.setStorage({
+                    key: 'isLogin',
+                    data: false
+                });
+                wx.setStorage({
+                    key: 'user',
+                    data: {}
+                });
+                wx.navigateTo({
+                    url: '/pages/login/login',
+                })
+            })
+            .catch(() => {
+                // on cancel
+            });
 
     },
 

@@ -1,8 +1,11 @@
 {
     "pages": [
-        "pages/index/index",
-        "pages/mine/mine",
-        "pages/login/login"
+        "pages/home/index/index",
+        "pages/mine/index/index",
+        "pages/notice/index/index",
+        "pages/login/login",
+        "pages/inspriration/index/index",
+        "pages/repository/index/index"
     ],
     "window": {
         "backgroundTextStyle": "light",
@@ -19,7 +22,9 @@
         "van-cell-group": "@vant/weapp/cell-group/index",
         "van-toast": "@vant/weapp/toast/index",
         "van-button": "@vant/weapp/button/index",
-        "van-field": "@vant/weapp/field/index"
+        "van-field": "@vant/weapp/field/index",
+        "van-action-sheet": "@vant/weapp/action-sheet/index",
+        "van-dialog": "@vant/weapp/dialog/index"
     },
     "sitemapLocation": "sitemap.json",
     "tabBar": {
@@ -29,13 +34,31 @@
         "color": "#666",
         "list": [
             {
-                "pagePath": "pages/index/index",
-                "iconPath": "static/images/home.png",
-                "selectedIconPath": "static/images/home@selected.png",
-                "text": "首页"
+                "pagePath": "pages/inspriration/index/index",
+                "iconPath": "static/images/inspiration.png",
+                "selectedIconPath": "static/images/inspiration@selected.png",
+                "text": "灵感"
             },
             {
-                "pagePath": "pages/mine/mine",
+                "pagePath": "pages/repository/index/index",
+                "iconPath": "static/images/repository.png",
+                "selectedIconPath": "static/images/repository@selected.png",
+                "text": "知识库"
+            },
+            {
+                "pagePath": "pages/home/index/index",
+                "iconPath": "static/images/home.png",
+                "selectedIconPath": "static/images/home@selected.png",
+                "text": "逛逛"
+            },
+            {
+                "pagePath": "pages/notice/index/index",
+                "iconPath": "static/images/notice.png",
+                "selectedIconPath": "static/images/notice@selected.png",
+                "text": "消息"
+            },
+            {
+                "pagePath": "pages/mine/index/index",
                 "iconPath": "static/images/mine.png",
                 "selectedIconPath": "static/images/mine@selected.png",
                 "text": "我的"

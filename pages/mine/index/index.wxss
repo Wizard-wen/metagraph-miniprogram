@@ -1,0 +1,41 @@
+Page {
+  background: #eee;
+  padding-top: 50rpx;
+}
+.header-cell-group {
+  margin-bottom: 20rpx !important;
+}
+.head-view {
+  height: 150rpx;
+  width: 100%;
+}
+.user-info {
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+}
+.user-avatar {
+  height: 90rpx;
+  width: 90rpx;
+  margin-right: 30rpx;
+  border-radius: 50%;
+}
+.user-name {
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 36rpx;
+}
+.custom-cell-group {
+  margin-bottom: 20rpx !important;
+}
+.control {
+  width: 750rpx;
+  display: flex;
+  justify-content: center;
+}
+.logout-button {
+  height: 80rpx !important;
+  width: 686rpx;
+  border-radius: 12rpx !important;
+}
