@@ -1,2 +1,16 @@
-<!--pages/repository/index/index.wxml-->
-<text>pages/repository/index/index.wxml</text>
+<van-search custom-class="search-box" value="{{ value }}" placeholder="请输入搜索关键词" />
+<van-cell-group custom-class="inspiration-item" inset>
+    <van-cell use-label-slot icon="notes-o">
+        <view class="repository-title" slot="title">知识库1</view>
+        <view slot="label" class="head-view">
+            <view class="content">
+                <view>11111</view>
+                <view>11111</view>
+            </view>
+            <view class="control">
+                <view>2022-11-23 09:54</view>
+                <van-icon name="ellipsis" bindtap="showActionSheet" />
+            </view>
+        </view>
+    </van-cell>
+</van-cell-group>

@@ -1,7 +1,7 @@
 <scroll-view scroll-y="true">
     <van-cell-group custom-class="inspiration-item" inset wx:key="index" wx:for="(item, index) in 20">
         <van-cell use-label-slot>
-            <view slot="label" class="head-view">
+            <view slot="label">
                 <view class="content">
                     <view>11111</view>
                     <view>11111</view>

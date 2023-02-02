@@ -24,7 +24,8 @@
         "van-button": "@vant/weapp/button/index",
         "van-field": "@vant/weapp/field/index",
         "van-action-sheet": "@vant/weapp/action-sheet/index",
-        "van-dialog": "@vant/weapp/dialog/index"
+        "van-dialog": "@vant/weapp/dialog/index",
+        "van-search": "@vant/weapp/search/index"
     },
     "sitemapLocation": "sitemap.json",
     "tabBar": {

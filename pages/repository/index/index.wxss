@@ -1,1 +1,14 @@
 /* pages/repository/index/index.wxss */
+.search-box {
+  margin-bottom: 60rpx;
+}
+.repository-title {
+  border-bottom: 1px solid #eeeeee;
+  margin-bottom: 20rpx;
+  padding-bottom: 10rpx;
+}
+.control {
+  margin-top: 40rpx;
+  display: flex;
+  justify-content: space-between;
+}
